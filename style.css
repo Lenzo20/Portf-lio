@@ -1,0 +1,182 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  font-size: 62.5%; /* 1rem = 10px */
+  --black: hsl(181, 73%, 62%);
+  --icon: hsl(252, 100%, 50%);
+}
+
+/* BODY */
+
+body {
+  max-width: 1300px;
+  margin: 0 auto;
+  background: black;
+  color: white;
+}
+
+header {
+  display: block;
+}
+
+/* ------- NAV --------- */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.cabecalho {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.link {
+  flex-direction: row;
+  align-items: center;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.link li{
+  list-style: none;
+}
+
+.link li a {
+  color: white;
+  font-size: 1.7rem;
+}
+
+.link li a {
+  text-decoration: none;
+}
+
+@media (min-width: 1024px) {
+
+  /* Gerais */
+  .col-a {
+    grid-area: A;
+  }
+
+  .col-b {
+    grid-area: B;
+  }
+
+  .col-c {
+    grid-area: C;
+  }
+
+  .col-d {
+    grid-area: D;
+  }
+
+  .col-e {
+    grid-area: E;
+  }
+
+  .sk-name p {
+    font-size: 1.8rem;
+  }
+
+  /* Header */
+
+  .wrapper {
+    height: calc(100vh - 8.9rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  header .wrapper {
+    padding: 1rem;
+  }
+
+  header .wrapper h1 {
+    font-size: 4.5rem;
+  }
+
+  header .wrapper h1,
+  header .wrapper p {
+    margin-bottom: 1rem;
+  }
+
+  .text-name {
+    margin-bottom: 0;
+  }
+
+  .wrapper p {
+    font-size: 1.8rem;
+  }
+
+  .text-blue-bold {
+    font-weight: bold;
+  }
+
+  /* ABOUT */
+
+  .subtitle {
+    text-align: center;
+    font-size: 3.2rem;
+    margin: 10rem 0;
+    margin-bottom: 5rem;
+  }
+
+  /* WORKS */
+
+  .works-grid {
+    display: grid;
+    grid-template-columns: 1rf 1rf 1rf;
+    gap: 5rem
+  }
+
+  /* Skills */
+
+  .skills-grid {
+    display: grid;
+    grid-template-columns: 1rf 1rf 1rf 1rf 1rf;
+    gap: 2.5rem;
+    grid-template-areas: 'A B C D E';
+  }
+
+  .skills-itens {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 0.8rem;
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+    padding: 10px 0px;
+    font-size: 1.6rem;
+  }
+
+  /* CONTACT */
+
+  .w-contact {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+    margin: 5rem 0rem;
+    display: flex;
+    font-size: 1.6rem;
+  }
+
+  .text-blue,
+  .text-blue-bold {
+    color: var(--black);
+  }
+
+  /* icon */
+
+  .w-contact i{
+    color: var(--black);
+    font-size: 2.4rem;
+  }
+
+  .icon i {
+    font-size: 6rem;
+    color: var(--black);
+  }
+}
